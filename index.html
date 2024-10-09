@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Ugi Pramahardika</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.0/firebase-analytics.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Portfolio Ugi Pramahardika</h1>
+        </header>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Halo, saya Ugi Pramahardika, seorang mahasiswa Informatika.</p>
+        </section>
+
+        <section id="contact">
+            <h2>Post a Comment</h2>
+            <form id="commentForm">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+
+                <label for="comment">Keterangan:</label>
+                <textarea id="comment" name="comment" required></textarea><br>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <section id="comments">
+            <h2>Comments</h2>
+            <div id="commentsList"></div> 
+        </section>
+    </div>
+
+    <script src="js/main.js" type="module"></script>
+</body>
+</html>
